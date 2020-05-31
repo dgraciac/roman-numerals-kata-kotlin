@@ -12,6 +12,13 @@ internal class ArabicToRomanTest {
         }
     }
 
+    @Test
+    fun `converts 2`() {
+        arabicToRoman(2).let {
+            assertThat(it).isEqualTo("II")
+        }
+    }
+
     private fun arabicToRoman(arabic: Int): String {
         return "I"
     }
