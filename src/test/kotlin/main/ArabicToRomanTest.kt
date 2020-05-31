@@ -1,32 +1,32 @@
 package main
 
 import org.assertj.core.api.Assertions.assertThat
-import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.Arguments
+import org.junit.jupiter.params.provider.MethodSource
 
 internal class ArabicToRomanTest {
 
-    @Test
-    fun `converts 1`() {
-        arabicToRoman(1).let {
-            assertThat(it).isEqualTo("I")
-        }
-    }
-
-    @Test
-    fun `converts 2`() {
-        arabicToRoman(2).let {
-            assertThat(it).isEqualTo("II")
-        }
-    }
-
-    @Test
-    fun `converts 3`() {
-        arabicToRoman(3).let {
-            assertThat(it).isEqualTo("III")
+    @ParameterizedTest
+    @MethodSource("test data")
+    fun `converts arabic to roman`(arabic: Int, roman: String) {
+        arabicToRoman(arabic).let {
+            assertThat(it).isEqualTo(roman)
         }
     }
 
     private fun arabicToRoman(arabic: Int): String {
         return if (arabic == 1) "I" else if(arabic == 2) "II" else "III"
+    }
+
+    companion object {
+        @JvmStatic
+        fun `test data`(): List<Arguments> {
+            return listOf(
+                Arguments.of(1, "I"),
+                Arguments.of(2, "II"),
+                Arguments.of(3, "III")
+            )
+        }
     }
 }
