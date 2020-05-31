@@ -24,7 +24,8 @@ internal class ArabicToRomanTest {
             }
             arabic == 4 -> "IV"
             arabic < 9 -> "V".plus(arabicToRoman(arabic - 5))
-            else -> "IX"
+            arabic == 9 -> "IX"
+            else -> "X"
         }
     }
 
