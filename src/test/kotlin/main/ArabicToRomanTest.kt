@@ -20,6 +20,6 @@ internal class ArabicToRomanTest {
     }
 
     private fun arabicToRoman(arabic: Int): String {
-        return "I"
+        return if (arabic == 1) "I" else "II"
     }
 }
