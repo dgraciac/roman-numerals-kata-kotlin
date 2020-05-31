@@ -42,7 +42,10 @@ internal class ArabicToRomanTest {
                 Arguments.of(7, "VII"),
                 Arguments.of(8, "VIII"),
                 Arguments.of(9, "IX"),
-                Arguments.of(10, "X")
+                Arguments.of(10, "X"),
+                Arguments.of(11, "XI"),
+                Arguments.of(12, "XII"),
+                Arguments.of(13, "XIII")
             )
         }
     }
