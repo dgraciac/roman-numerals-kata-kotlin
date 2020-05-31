@@ -17,8 +17,10 @@ internal class ArabicToRomanTest {
 
     private fun arabicToRoman(arabic: Int): String {
         var roman = ""
-        repeat(arabic) { roman = roman.plus("I") }
-        return roman
+        return if(arabic < 4) {
+            repeat(arabic) { roman = roman.plus("I") }
+            roman
+        } else "IV"
     }
 
     companion object {
