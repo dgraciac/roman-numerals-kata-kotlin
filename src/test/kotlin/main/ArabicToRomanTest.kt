@@ -13,6 +13,6 @@ internal class ArabicToRomanTest {
     }
 
     private fun arabicToRoman(arabic: Int): String {
-        TODO("Not yet implemented")
+        return "I"
     }
 }
