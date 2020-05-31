@@ -27,7 +27,8 @@ internal class ArabicToRomanTest {
             return listOf(
                 Arguments.of(1, "I"),
                 Arguments.of(2, "II"),
-                Arguments.of(3, "III")
+                Arguments.of(3, "III"),
+                Arguments.of(4, "IV")
             )
         }
     }
