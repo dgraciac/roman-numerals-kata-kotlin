@@ -25,7 +25,8 @@ internal class ArabicToRomanTest {
             arabic == 4 -> "IV"
             arabic == 5 -> "V"
             arabic == 6 -> "VI"
-            else -> "VII"
+            arabic == 7 -> "VII"
+            else -> "VIII"
         }
     }
 
