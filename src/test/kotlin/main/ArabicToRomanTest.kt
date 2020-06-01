@@ -17,19 +17,14 @@ internal class ArabicToRomanTest {
 
     private fun arabicToRoman(arabic: Int): String {
         return when {
-            arabic < 4 -> convertArabicLesserThanFour(arabic)
+            arabic == 0 -> ""
+            arabic < 4 -> "I".plus(arabicToRoman(arabic - 1))
             arabic == 4 -> "IV"
             arabic < 9 -> "V".plus(arabicToRoman(arabic - 5))
             arabic == 9 -> "IX"
             arabic < 14 -> "X".plus(arabicToRoman(arabic - 10))
             else -> TODO()
         }
-    }
-
-    private fun convertArabicLesserThanFour(arabic: Int): String {
-        var roman = ""
-        repeat(arabic) { roman = roman.plus("I") }
-        return roman
     }
 
     companion object {
