@@ -1,5 +1,23 @@
 Given a positive integer number lesser than 4000 determine its Roman numeral representation as a String.
 
+First Iteration:
+
+Given a positive integer number lesser than 5 determine its Roman numeral representation as a String
+
+```
+Examples
+* 1 -> "I"
+* 2 -> "II"
+* 3 -> "III"
+* 4 -> "IV"
+* 5 -> "V"
+```
+ 
+Second Iteration:
+
+Given a positive integer number lesser than 10 determine its Roman numeral representation as a String
+
+
 Examples:
 
 * 1 -> "I" | 10 -> "X" | 100 -> "C" | 1000 -> "M"
@@ -16,3 +34,19 @@ Examples:
 * 99 -> "XCIX" (90 -> "XC" + 9 -> "IX")
 * 47 -> "XLVII" (40 -> "XL" + 7 -> "VII")
 * 3888 -> "MMMDCCCLXXXVIII" (3000 -> "MMM" + 800 -> "DCCC" + 80 -> "LXXX" + 8 -> "VIII")
+
+
+## Transformation Priority
+
+    ({}–>nil) no code at all->code that employs nil
+    (nil->constant)
+    (constant->constant+) a simple constant to a more complex constant
+    (constant->scalar) replacing a constant with a variable or an argument
+    (statement->statements) adding more unconditional statements.
+    (unconditional->if) splitting the execution path
+    (scalar->array)
+    (array->container)
+    (statement->recursion)
+    (if->while)
+    (expression->function) replacing an expression with a function or algorithm
+    (variable->assignment) replacing the value of a variable.
