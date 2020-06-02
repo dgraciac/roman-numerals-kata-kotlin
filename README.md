@@ -17,6 +17,27 @@ Second Iteration:
 
 Given a positive integer number lesser than 10 determine its Roman numeral representation as a String
 
+```
+Examples
+* 6 -> "VI"
+* 7 -> "VII"
+* 8 -> "VIII"
+* 9 -> "IX"
+* 10 -> "X"
+``` 
+Third Iteration:
+
+```
+Examples
+* 10 -> "X"
+* 17 -> "XVII"
+* 20 -> "XX"
+* 27 -> "XXVII"
+* 30 -> "XXX"
+* 34 -> "XXXIV"
+* 40 -> "XL"
+* 50 -> "L"
+```
 
 Examples:
 
