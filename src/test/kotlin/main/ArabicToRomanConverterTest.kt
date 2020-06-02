@@ -35,6 +35,7 @@ class ArabicToRomanConverterTest {
                 Arguments.of(74, "LXXIV"),
                 Arguments.of(79, "LXXIX"),
                 Arguments.of(89, "LXXXIX"),
+                Arguments.of(97, "XCVII"),
                 Arguments.of(100, "C")
 
             )
