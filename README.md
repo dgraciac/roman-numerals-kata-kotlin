@@ -32,6 +32,7 @@ Examples
 * 10 -> "X"
 * 17 -> "XVII"
 * 20 -> "XX"
+* 24 -> "XXIV"
 * 27 -> "XXVII"
 * 30 -> "XXX"
 * 34 -> "XXXIV"

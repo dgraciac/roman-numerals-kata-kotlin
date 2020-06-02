@@ -19,8 +19,11 @@ class ArabicToRomanConverterTest {
                 Arguments.of(7, "VII"),
                 Arguments.of(9, "IX"),
                 Arguments.of(10, "X"),
+                Arguments.of(13, "XIII"),
                 Arguments.of(14, "XIV"),
-                Arguments.of(13, "XIII")
+                Arguments.of(24, "XXIV"),
+                Arguments.of(34, "XXXIV"),
+                Arguments.of(39, "XXXIX")
 
             )
     }
