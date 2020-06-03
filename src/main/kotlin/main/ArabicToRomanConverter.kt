@@ -18,9 +18,9 @@ fun arabicToRoman(arabicNumeral: Int): String {
     return when {
         arabicNumeral == 0 -> ""
         arabicNumeral < 4 -> I.plus(arabicToRoman(arabicNumeral - 1))
-        arabicNumeral == 4 -> IV
+        arabicNumeral == 4 -> IV.plus(arabicToRoman( 0))
         arabicNumeral < 9 -> V.plus(arabicToRoman(arabicNumeral - 5))
-        arabicNumeral == 9 -> IX
+        arabicNumeral == 9 -> IX.plus(arabicToRoman( 0))
         arabicNumeral < 40 -> X.plus(arabicToRoman(arabicNumeral - 10))
         arabicNumeral <= 49 -> XL.plus(arabicToRoman(arabicNumeral - 40))
         arabicNumeral < 90 -> L.plus(arabicToRoman(arabicNumeral - 50))
