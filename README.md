@@ -19,11 +19,7 @@ Given a positive integer number lesser than 10 determine its Roman numeral repre
 
 ```
 Examples
-* 6 -> "VI"
-* 7 -> "VII"
-* 8 -> "VIII"
-* 9 -> "IX"
-* 10 -> "X"
+git p
 ``` 
 Third Iteration:
 
