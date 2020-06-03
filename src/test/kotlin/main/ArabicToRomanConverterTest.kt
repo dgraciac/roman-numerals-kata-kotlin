@@ -36,7 +36,31 @@ class ArabicToRomanConverterTest {
                 Arguments.of(79, "LXXIX"),
                 Arguments.of(89, "LXXXIX"),
                 Arguments.of(97, "XCVII"),
-                Arguments.of(100, "C")
+                Arguments.of(100, "C"),
+                Arguments.of(101, "CI"),
+                Arguments.of(105, "CV"),
+                Arguments.of(189, "CLXXXIX"),
+                Arguments.of(190, "CXC"),
+                Arguments.of(200, "CC"),
+                Arguments.of(289, "CCLXXXIX"),
+                Arguments.of(399, "CCCXCIX"),
+                Arguments.of(400, "CD"),
+                Arguments.of(444, "CDXLIV"),
+                Arguments.of(499, "CDXCIX"),
+                Arguments.of(500, "D"),
+                Arguments.of(596, "DXCVI"),
+                Arguments.of(782, "DCCLXXXII"),
+                Arguments.of(900, "CM"),
+                Arguments.of(994, "CMXCIV"),
+                Arguments.of(999, "CMXCIX"),
+                Arguments.of(1000, "M"),
+                Arguments.of(2768, "MMDCCLXVIII"),
+                Arguments.of(3888, "MMMDCCCLXXXVIII"),
+                Arguments.of(4000, "MMMM")
+
+
+
+
 
             )
     }
